@@ -6,26 +6,25 @@ a = 1,
 b = 2.01,
 c = 'string'
 
-x = 1
-y = 2.01
-z = 'string'
+x, y, z = 1 , 2.01, 'string'
 print(x,y,z)
-type(x)
-type(y)
-type(z)
+print("value of x is: x, and the type is: ", type(x))
+print("value of y is: y, and the type is: ", type(y))
+print("value of z is: z, and the type is: ", type(z))
 
 
 2) Create a variable of type complex and swap it with another variable of type integer
 
 a = 1 + 1j
-print(type(a))
 b = 1
-print(type(b))
+print("The values of a and b are: \n", a, b)
+print("The types of a and b are: \n ", type(a), type(b))
 X = a
 a = b
 b = X
 
-print('The values of a and b are: \n', a, b)
+print('The swapped values of a and b are: \n', a, b)
+print("The swapped types of a and b are, \n ", type(a), type(b))
 
 
 3. Swap two numbers using a third variable and do the same task without using any third variable
@@ -40,8 +39,7 @@ print("The swapped values of a and b are: \n", a , b)
 p , q = 10 , 20
 print("Values of p and q before swapping: \n", p , q)
 p , q = q , p
-print("Without third variable swapping of p and q, p = \n ", p)
-print("Without third variable swapping of p and q, q = \n ", q)
+print("Without third variable swapped values of p and q, \n", p , q)
 
 
 4. Write a program that takes input from the user and prints it using both Python 2.x and Python 3.x
@@ -66,7 +64,7 @@ print("Enter any two numbers between 1 to 10:")
 m = int(input("m: "))
 n = int(input("n: "))
 z = m + n
-print("value is z now is: ", z)
+print("value is z after adding m and n is: ", z)
 z += 30
 result = z
 print("The final result is: ", result)
